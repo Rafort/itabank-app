@@ -244,6 +244,8 @@ p{
   padding-top: 12px;
   background-color: #fff;
 	height: 48px;
+  padding-left: 12px;
+  padding-right: 16px;
 }
 
 .navbar3 {
@@ -712,9 +714,7 @@ p{
   #nest .text-body {
     font-size: 13px;
   }
-   .btn-link {
-    font-size: 12px;
-  }
+
 }
 
 
@@ -1058,6 +1058,8 @@ h6{
 }
 .top-tt{
   font-size:16px;
+  margin-left: 3vw;
+  line-height: 78%;
 }
 .balls{
  	width: 32px;
@@ -1340,7 +1342,7 @@ h6{
 
 /*-- carousel --*/
 .owl-carousel .owl-stage-outer {
-  overflow-y: auto !important;
+  overflow-y: hidden !important;
   padding-top: 10px;
   padding-bottom: 6px;
   margin-left: 16px;
@@ -1403,7 +1405,17 @@ h6{
   }
 }
 
-
+.navbar .btn-link {
+ 	color: Gray; 
+}
+.navbar .btn-link:hover{
+ 	color: var(--primary); 
+}
+.navbar .btn-link:focus{
+ 	outline: 0px dotted;
+	outline: 0;
+    box-shadow: 0 0 0 0.0rem rgba(34, 62, 226, 0.25); 
+}
 
 
 
