@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="img/favicon.ico">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css">
+  <link rel="stylesheet" href="theme.css" type="text/css">
+  <title>Portal de negociação</title>
+</head>
+
+<body>
+  <!-- menu -->
+  <nav class="navbar navbar-expand sticky-top">
+    <div class="container">
+      <!-- Topbar Navbar -->
+      <a class="btn btn-link my-0 p-1" href="home.html"><i class="fa fa-arrow-left m-0"></i></a>
+      <p class="grey02 top-tt mt-2 mb-2">Fazer pagamento</p>
+      <ul class="navbar-nav ml-auto text-secondary"><a class="sidebar-brand d-flex align-items-right justify-content-right" href="#">
+        </a>
+        <!-- Nav Item - User Information -->
+        <li class="nav-item dropdown no-arrow grey02">
+          <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <span class="mr-2">Cliente</span>
+            <i class="fa fa-chevron-down fa-fw grey01 d-inline-block"></i>
+          </a>
+          <!-- Dropdown - User Information -->
+          <div class="dropdown-menu dropdown-menu-right animated--grow-in" aria-labelledby="userDropdown">
+            <p class="dropdown-item mb-0">Cliente Completo </p>
+            <a class="dropdown-item fw-700 py-0" href="cadastro.html">CNPJ: 00.000.0001-00 </a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item py-0" href="#" data-toggle="modal" data-target="#logout"> Sair </a>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <!-- Sybnav-->
+  </nav>
+  <!-- Content -->
+  <nav class="navbar3 navbar-light navbar-expand">
+    <div class="container justify-content-center"> <button class="navbar-toggler navbar-toggler-right border-0" type="button" data-toggle="collapse" data-target="#navbar3">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse text-center justify-content-center" id="navbar3">
+        <ul class="navbar-nav justify-content-between">
+          <li class="nav-item border-bottom border-info mx-5 mb-2"> <a class="nav-link active" href="home.html">Ofertas</a> </li>
+          <li class="nav-item mx-5"> <a class="nav-link" href="acordos.html">Acordos</a> </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="pb-5 mar70">
+    <div class="container feed1 col-lg-12 py16">
+      <div class="row d-flex justify-content-center px16 my16">
+        <div class="px-0 col-lg-12">
+          <div class="stepper-wrapper">
+            <div class="stepper-item done">
+              <div class="step-counter"><i class="fa fa-check"></i></div>
+            </div>
+            <div class="stepper-item done">
+              <div class="step-counter"><i class="fa fa-check"></i></div>
+            </div>
+            <div class="stepper-item done">
+              <div class="step-counter"><i class="fa fa-check"></i></div>
+            </div>
+            <div class="stepper-item completed">
+              <div class="step-counter">4</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12 col-lg-12">
+          <div class="row">
+            <div class="col-lg-12">
+              <h6 class="mb-0" style="color:#3A4148; font-weight:600;">Pronto. Agora é só pegar o seu boleto e pagar na data escolhida.&nbsp;<br><br>Fique atento ao vencimento do boleto. O não pagamento na data cancela o acordo.</h6>
+              <p class="text-info mt-4 mb-1">Linha digitável:</p><a class="btn btn-link float-right mr-1" href="#"><i class="fa fa-clone text-body"></i> </a>
+              <p class="codebar">1238219379128379128519283712893</p>
+              <p class="text-info float-right mb-1" style="font-size:12px">Clique para copiar</p>
+            </div>
+          </div>
+          <a class="btn btn-pill2 btn-block text-left my-4" href="#" data-target="#download" data-toggle="modal">
+            <i class="fa fa-arrow-right float-right mt-2"></i>
+            <img src="img/download.svg" class="pr-4 pl-1"> Baixar boleto </a>
+          <hr style="height:0px;background-color:#9AACF5;" class="mb-4">
+          <a class="btn btn-pill2 btn-block text-left my16" href="#" data-target="#whatsapp" data-toggle="modal">
+            <i class="fa fa-arrow-right float-right mt-2"></i>
+            <img src="img/whats.svg" class="pr-4 pl-1"> Receber por WhatsApp </a><a class="btn btn-pill2 btn-block text-left my16" href="#" data-target="#sms" data-toggle="modal">
+            <i class="fa fa-arrow-right float-right mt-2"></i>
+            <img src="img/sms.svg" class="pr-4 pl-1"> Receber por SMS</a>
+          <a class="btn btn-pill2 btn-block text-left" href="#" data-target="#email" data-toggle="modal">
+            <i class="fa fa-arrow-right float-right mt-2"></i>
+            <img src="img/email.svg" class="pr-4 pl-1">&nbsp;Receber por EMAIL </a>
+          <p class="my24" style="font-size:16px;line-height:19px;">Parabéns! Você concluiu esse acordo, porém ainda há contratos para negociar. </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="checkout1 fixed-bottom">
+    <div class="container feed1">
+      <div class="card-body">
+        <a class="btn btn-primary btn-block" href="home2.html">CONCLUIR</a>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="download">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h6 class="modal-title">Baixar boleto</h6> <button type="button" class="close" data-dismiss="modal"> <span>×</span> </button>
+        </div>
+        <div class="modal-body">
+          <p>Seu boleto foi baixado com sucesso!</p>
+          <a class="btn btn-primary btn-block" href="#" data-dismiss="modal">OBRIGADO</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="whatsapp">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h6 class="modal-title">Receber por WhatsApp</h6> <button type="button" class="close" data-dismiss="modal"> <span>×</span> </button>
+        </div>
+        <div class="modal-body">
+          <p>Sua mensagem será enviada no WhatsApp informado em instantes.</p>
+          <a class="btn btn-primary btn-block" href="#" data-dismiss="modal">OBRIGADO</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="sms">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h6 class="modal-title">Receber por SMS</h6> <button type="button" class="close" data-dismiss="modal"> <span>×</span> </button>
+        </div>
+        <div class="modal-body">
+          <p>Sua mensagem será enviada no telefone informado em instantes.</p>
+          <a class="btn btn-primary btn-block" href="#" data-dismiss="modal">OBRIGADO</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="email">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h6 class="modal-title">Receber por EMAIL</h6> <button type="button" class="close" data-dismiss="modal"> <span>×</span> </button>
+        </div>
+        <div class="modal-body">
+          <p>Sua mensagem será enviada no e-mail informado em instantes.</p>
+          <a class="btn btn-primary btn-block" href="#" data-dismiss="modal">OBRIGADO</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="sms-tel">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h6 class="modal-title">Informe seu contato</h6> <button type="button" class="close" data-dismiss="modal"> <span>×</span> </button>
+        </div>
+        <div class="modal-body">
+          <div class="form-group mb-4"><label>Telefone</label> <input type="text" class="form-control form-control-sm" placeholder="Digite aqui" id="form2" name="Telefone"> </div>
+          <a class="btn btn-primary btn-block" href="#" data-dismiss="modal">RECEBER BOLETO</a>
+          <a class="btn btn-link btn-block" href="#" data-dismiss="modal">Voltar</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- FAB-->
+  <div class="fab">
+    <button class="main">
+    </button>
+    <ul>
+      <li>
+        <button id="opcao1"><img src="img/whats1.svg" class="mb-2"> </button>
+      </li>
+      <li>
+        <button id="opcao2"><img src="img/chat1.svg" class="mb-2"></button>
+      </li>
+    </ul>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <script>
+    function toggleFAB(fab) {
+      if (document.querySelector(fab).classList.contains('show')) {
+        document.querySelector(fab).classList.remove('show');
+      } else {
+        document.querySelector(fab).classList.add('show');
+      }
+    }
+    document.querySelector('.fab .main').addEventListener('click', function() {
+      toggleFAB('.fab');
+    });
+    document.querySelectorAll('.fab ul li button').forEach((item) => {
+      item.addEventListener('click', function() {
+        toggleFAB('.fab');
+      });
+    });
+  </script>
+   
+</body>
+
+</html>
