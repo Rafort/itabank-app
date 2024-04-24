@@ -1559,6 +1559,41 @@ h6{
   }
 }
 
+.table {
+  font-size:10px;
+  margin:0px;
+  padding-left:0;
+  padding-top:8px;
+  padding-right: 2px;
+  text-align:center;
+  background-color: #EFF0F2;
+  th{
+    padding:2px;
+    border: 0px;
+  }
+  td{
+   padding:2px; 
+   border: 0px; 
+  }
+  tr{
+    border: 0px;
+  }
+  
+}
+.table thead th {
+  border-bottom: 0px;
+  padding-bottom:4px;
+}
+.table-responsive{
+  background-color: #EFF0F2;
+  padding-bottom:8px;
+  padding-top:8px;
+}
+
+.f10p{
+ 	font-size:10px; 
+}
+
 .subtt2{
  	font-size:16px;
   font-weight:600;
@@ -1605,6 +1640,14 @@ label{
   	font-weight:400;
 }
 
+.ver-parc::before{
+  	content: 'ocultar parcelas';
+    font-size: 10px;
+}
+.ver-parc[display='none']::before {
+    content: 'mostrar parcelas';
+  	font-size: 10px;
+}
 
 .collapsible-link::before {
     content: '\f107';

@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="img/favicon.ico">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css">
+  <link rel="stylesheet" href="theme.css" type="text/css">
+  <title>Portal de negociação</title>
+</head>
+
+<body>
+  <!-- menu -->
+  <nav class="navbar navbar-expand sticky-top">
+    <div class="container">
+      <!-- Topbar Navbar -->
+      <a class="btn btn-link my-0 p-1" href="home.html"><i class="fa fa-arrow-left m-0"></i></a>
+      <p class="grey02 top-tt mt-2 mb-2">Detalhes do contrato</p>
+      <ul class="navbar-nav ml-auto text-secondary"><a class="sidebar-brand d-flex align-items-right justify-content-right" href="#">
+        </a>
+        <!-- Nav Item - User Information -->
+        <li class="nav-item dropdown no-arrow grey02">
+          <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <span class="mr-2">Cliente</span>
+            <i class="fa fa-chevron-down fa-fw grey01 d-inline-block"></i>
+          </a>
+          <!-- Dropdown - User Information -->
+          <div class="dropdown-menu dropdown-menu-right animated--grow-in" aria-labelledby="userDropdown">
+            <p class="dropdown-item mb-0">Cliente Completo </p>
+            <a class="dropdown-item fw-700 py-0" href="cadastro.html">CNPJ: 00.000.0001-00 </a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item py-0" href="#" data-toggle="modal" data-target="#logout"> Sair </a>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <!-- Sybnav-->
+  </nav>
+  <!-- Content -->
+  <nav class="navbar3 navbar-light navbar-expand">
+    <div class="container justify-content-center"> <button class="navbar-toggler navbar-toggler-right border-0" type="button" data-toggle="collapse" data-target="#navbar3">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse text-center justify-content-center" id="navbar3">
+        <ul class="navbar-nav justify-content-between">
+          <li class="nav-item border-bottom border-info mx-5 mb-2"> <a class="nav-link active" href="home.html">Ofertas</a> </li>
+          <li class="nav-item mx-5"> <a class="nav-link" href="acordos.html">Acordos</a> </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="pb-5 mar110">
+    <div class="container feed1 col-lg-12 py16">
+      <div class="row">
+        <div class="col-12 col-lg-12">
+          <div class="row">
+            <div class="col-lg-12">
+              <h6 class="mb-0" style="color:#3A4148; font-weight:600;">Informações dos contratos</h6>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container feed1 col-lg-12">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="card">
+            <div class="card-header3">
+              <div class="row">
+                <div class="col-12 my-0 px-0 mx-0 py-0">
+                  <p class="mb-0 pb-0">DESCONTO DE CHEQUE</p>
+                  <p class="mb-0 pb-0 subtt">Contrato: 123891283</p>
+                </div>
+              </div>
+            </div>
+            <div class="card-body">
+              <p class="mb-0 de-por">De&nbsp;<strike>R$5.985,00</strike> por</p>
+              <p class="percents float-right my-0"><img src="img/arrow-down.svg" class="mx-1">75%</p>
+              <h6 class="valores m-0">R$ 2.970,00</h6>
+              <p class="mb-1 parcelas">em 36 parcelas de R$ 82,50</p>
+              <p class="pill-economy my16 mx-auto">Economize R$ 8.430,00</p>
+              <div id="faqs" class="accordion">
+                <!-- Accordion item 1 -->
+                <div class="card5 my16">
+                  <div id="heading1" class="card-header5 my-2">
+                    <p class="my16">
+                      <a href="#" data-toggle="collapse" data-target="#collapse1" aria-expanded="true" aria-controls="collapse1" class="nav-link subtt2 collapsible-link p-0">Ver detalhes</a>
+                    </p>
+                  </div>
+                  <div id="collapse1" aria-labelledby="heading1" class="collapse show" style="">
+                    <div class="px-0 pt-3 my-2 border-top">
+                      <div class="row pb-2">
+                        <div class="pr-0 col-lg-8">
+                          <p class="subtt2 my-0">Parcelas</p>
+                          <p class="subtt mb-0">Selecione as parcelas que deseja negociar</p>
+                        </div>
+                        <div class="col-md-4 px-0 d-flex align-items-end">
+                          <a onclick="toggleRowVisibility()" class="subtt mb-0 text-body" style="text-decoration:underline;cursor:pointer;position"> ver parcelas pagas </a>
+                        </div>
+                      </div>
+                      <!-- Tables-->
+                      <div class="table-responsive">
+                        <table class="table">
+                          <thead>
+                            <tr>
+                              <th>Selecionar</th>
+                              <th>Parcelas</th>
+                              <th>Vencimento</th>
+                              <th>Valor</th>
+                              <th>Situação</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr style="display: none;" id="hidden-row">
+                              <td><input type="checkbox" name="select1" id="select1" checked="checked" disabled="disabled"></td>
+                              <td>1/9</td>
+                              <td>15/07/2023</td>
+                              <td>R$ 1.200,00</td>
+                              <td>Pago</td>
+                            </tr>
+                            <tr>
+                              <td><input type="checkbox" name="select1" id="select1" checked="checked" disabled="disabled"></td>
+                              <td>2/9</td>
+                              <td>15/07/2023</td>
+                              <td>R$ 1.200,00</td>
+                              <td>Vencido</td>
+                            </tr>
+                            <tr>
+                              <td><input type="checkbox" name="select1" id="select1" checked="checked" disabled="disabled"></td>
+                              <td>3/9</td>
+                              <td>15/07/2023</td>
+                              <td>R$ 1.200,00</td>
+                              <td>Vencido</td>
+                            </tr>
+                            <tr>
+                              <td><input type="checkbox" name="select1" id="select1" checked="checked" disabled="disabled"></td>
+                              <td>4/9</td>
+                              <td>15/07/2023</td>
+                              <td>R$ 1.200,00</td>
+                              <td>Vencido</td>
+                            </tr>
+                            <tr>
+                              <td><input type="checkbox" name="select1" id="select1" checked="checked" disabled="disabled"></td>
+                              <td>5/9</td>
+                              <td>15/07/2023</td>
+                              <td>R$ 1.200,00</td>
+                              <td>Vencido</td>
+                            </tr>
+                            <tr>
+                              <td><input type="checkbox" name="select1" id="select1" checked="checked" disabled="disabled"></td>
+                              <td>6/9</td>
+                              <td>15/07/2023</td>
+                              <td>R$ 1.200,00</td>
+                              <td>Vencido</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                    <div class="pt-2 pb-3 border-bottom">
+                      <img src="img/info.svg" class="float-left mr-2 ">
+                      <p class="subtt mb-0">Se as parcelas forem alteradas, o valor será recalculado.</p>
+                    </div>
+                    <div class="pt-2">
+                      <p class="subtt2 my-0">Garantias</p>
+                      <p class="mb-0 f10p">Devedor solidário <br> Veículo - Ford Ka</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="fab">
+        <button class="main">
+        </button>
+        <ul>
+          <li>
+            <button id="opcao1"><img src="img/whats1.svg" class="mb-2"> </button>
+          </li>
+          <li>
+            <button id="opcao2"><img src="img/chat1.svg" class="mb-2"></button>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="checkout1 fixed-bottom">
+    <div class="container feed1">
+      <div class="card-body">
+        <a class="btn btn-primary btn-block" href="#">PAGAR PARCELADO</a><a class="btn btn-claro btn-block" href="#">PAGAR À VISTA R$ 2.970,00</a>
+      </div>
+    </div>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <script>
+    function toggleRowVisibility() {
+      var hiddenRow = document.getElementById("hidden-row");
+      if (hiddenRow.style.display === "none") {
+        hiddenRow.style.display = "";
+      } else {
+        hiddenRow.style.display = "none";
+      }
+    }
+  </script>
+  <script>
+    function toggleFAB(fab) {
+      if (document.querySelector(fab).classList.contains('show')) {
+        document.querySelector(fab).classList.remove('show');
+      } else {
+        document.querySelector(fab).classList.add('show');
+      }
+    }
+    document.querySelector('.fab .main').addEventListener('click', function() {
+      toggleFAB('.fab');
+    });
+    document.querySelectorAll('.fab ul li button').forEach((item) => {
+      item.addEventListener('click', function() {
+        toggleFAB('.fab');
+      });
+    });
+  </script>
+  
+</body>
+
+</html>
