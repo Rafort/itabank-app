@@ -402,6 +402,15 @@ p{
   padding-top: 0px;
   padding-left:16px;
 }
+.card-header6 {
+  font-size: 13px;
+  font-weight:400;
+  color: #3A4148;
+  padding-top: 0px;
+  padding-left:16px;
+}
+
+
 .card-header3 {
   font-weight:300;
   color: #3A4148;
@@ -420,6 +429,23 @@ p{
   padding-bottom:16px;
 }
 
+.card-header5 {
+  padding: 0px;
+  margin:0px;
+}
+
+.card-header5 h3 .collapsible-link {
+    font-size: 16px;
+  	color: #3A4148;
+}
+
+.card-header5 p .collapsible-link {
+    font-size: 13px;
+  	color: #3A4148;
+  	margin-left:150px;
+  	width: 42%;
+  	font-weight:400;
+}
 
 .subtt{
  	font-size:10px;
@@ -1622,23 +1648,7 @@ label{
 	box-shadow: 0px 0px   black;
 }
 
-.card-header5 {
-  padding: 0px;
-  margin:0px;
-}
 
-.card-header5 h3 .collapsible-link {
-    font-size: 16px;
-  	color: #3A4148;
-}
-
-.card-header5 p .collapsible-link {
-    font-size: 13px;
-  	color: #3A4148;
-  	margin-left:150px;
-  	width: 42%;
-  	font-weight:400;
-}
 
 .ver-parc::before{
   	content: 'ocultar parcelas';
@@ -1728,6 +1738,22 @@ label{
 .btn-primary {
  	text-transform: uppercase; 
 }
+
+.form-check-input{
+   	padding-bottom: 1px; 
+  	padding-top:1px;
+  }
+.form-check .opcs{
+ 	font-size: 10px;
+  line-height:12px;
+}
+
+.important{
+ 	font-size:13px;
+  font-style: italic;
+  text-justify: justify;
+}
+
 
 /* trash/
 767px

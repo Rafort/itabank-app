@@ -84,15 +84,23 @@
               <h6 class="mt-0 mb-3 subtt2">Resumo da negociação</h6>
               <div class="resumo-line">
                 <p>Plano de pagamento</p>
-                <p>À vista</p>
+                <p>Parcelado</p>
               </div>
               <div class="resumo-line">
-                <p>Valor à pagar</p>
-                <p><b>R$ 500,00</b></p>
+                <p>Valor de entrada</p>
+                <p><b>R$ 200,00</b></p>
               </div>
               <div class="resumo-line">
-                <p>Vencimento</p>
-                <p>20/05/2024</p>
+                <p>Vencimento da entrada</p>
+                <p>15/05/2024</p>
+              </div>
+              <div class="resumo-line">
+                <p>Valor das Parcelas</p>
+                <p><b>36x de R$ 54,00</b></p>
+              </div>
+              <div class="resumo-line">
+                <p>Vencimento das Parcelas</p>
+                <p class="col-5 px-0 text-right">25/06/2024 a 25/05/2027</p>
               </div>
               <div class="resumo-line">
                 <p>Desconto</p>
@@ -116,7 +124,11 @@
                     <div class="p-0 my-2">
                       <div class="resumo-line pb-1">
                         <p class="col-8 m-0 p-0" style="line-height: 15px;">Valor total das dívidas negociadas</p>
-                        <p>R$ 1.825,00</p>
+                        <p>R$ 3.825,00</p>
+                      </div>
+                      <div class="resumo-line pb-1">
+                        <p class="col-8 m-0 p-0" style="line-height: 15px;">Valor total IOF</p>
+                        <p>R$ 125,30</p>
                       </div>
                       <div class="resumo-line">
                         <div class="col-8 m-0 p-0">
@@ -124,23 +136,43 @@
                           </p>
                           <p style="font-size:10px;margin-top:-3px;letter-spacing:-0.3px;" class="p-0">(valor total das dívidas renegociadas + IOF)</p>
                         </div>
-                        <p>R$ 1.825,00</p>
+                        <p>R$ 3.950,30</p>
                       </div>
                     </div>
                   </div>
                 </div><!-- End -->
                 <!-- Accordion item 2 -->
                 <div class="card5">
-                  <div id="heading2" class="card-header5 border-top">
-                    <h3 class="subtt2 mt-2 py8">
-                      <a href="#" data-toggle="collapse" data-target="#collapse2" aria-expanded="false" aria-controls="collapse2" class="nav-link subtt2 collapsible-link p-0" style="line-height: 15px;">Contratos envolvidos nessa negociação</a>
+                  <div id="heading2" class="card-header5">
+                    <h3 class="card-header5 border-top py16">
+                      <a href="#" data-toggle="collapse" data-target="#collapse2" aria-expanded="false" aria-controls="collapse2" class="nav-link subtt2 collapsible-link p-0">Impostos e taxas</a>
                     </h3>
                   </div>
                   <div id="collapse2" aria-labelledby="heading2" class="collapse">
                     <div class="p-0 my-2">
+                      <div class="resumo-line pb-1">
+                        <p class="col-7 m-0 p-0" style="line-height: 15px;">Custo efetivo total (CET)</p>
+                        <p class="text-right">1,74% ao mês ou 23,50% ao ano</p>
+                      </div>
+                    </div>
+                  </div>
+                </div><!-- End -->
+                <!-- Accordion item 3 -->
+                <div class="card5">
+                  <div id="heading3" class="card-header5 border-top">
+                    <h3 class="subtt2 mt-2 py8">
+                      <a href="#" data-toggle="collapse" data-target="#collapse3" aria-expanded="false" aria-controls="collapse3" class="nav-link subtt2 collapsible-link p-0" style="line-height: 15px;">Contratos envolvidos nessa negociação</a>
+                    </h3>
+                  </div>
+                  <div id="collapse3" aria-labelledby="heading3" class="collapse">
+                    <div class="p-0 my-2">
                       <div class="resumo-line pb-1 ">
-                        <p style="font-size:10px;">ADIANT.DEPOS.CR</p>
+                        <p style="font-size:10px;">GIROPRE</p>
                         <p style="font-size:10px;">327183927183</p>
+                      </div>
+                      <div class="resumo-line pb-1 ">
+                        <p style="font-size:10px;">GIROPRE</p>
+                        <p style="font-size:10px;">554773927183</p>
                       </div>
                     </div>
                   </div>
@@ -156,6 +188,23 @@
                 <div class="form-group my-0">
                   <div class="form-group"><label>Telefone</label> <input type="text" class="form-control form-control-sm" placeholder="Digite aqui" id="form2" name="Telefone"> </div>
                   <div class="form-group"><label class="my8">Email</label> <input type="text" class="form-control form-control-sm" placeholder="Digite aqui" id="form2" name="email"> </div>
+                </div>
+              </form>
+            </div>
+          </div>
+          <div class="card my16">
+            <div class="card-body">
+              <form class="mb-0">
+                <div class="form-group my-0">
+                  <h6 class="mt-0 mb-3 subtt2">Importante</h6>
+                  <p class="important"> Agência: 2813 Conta Corrente: 12391-10 </p>
+                  <p class="important">Você autoriza o débito dos valores devidos de forma total ou parcela na(s) conta(s) corrente, poupança, salário e/ou pagamento indicada(s) na data de vencimento, podendo ser utilizado o limite da conta, evitando atrasos no pagamento. Em caso de alteração da numeração, categoria ou segmento da(s) conta(s) autorizada(s), os débitos autorizados serão mantidos, nas mesmas condições aprovadas. </p>
+                  <div class="row mb-2">
+                    <div class="col-12 d-flex flex-row justify-content-start align-items-center">
+                      <input type="checkbox" name="select1" id="select1" class="mr-3 mt-2 mb-2" >
+                      <p class="mb-0 pb-0 important">Eu li e aceito os termos do acordo.</p>
+                    </div>
+                  </div>
                 </div>
               </form>
             </div>
@@ -232,7 +281,7 @@
       });
     });
   </script>
-   
+  
 </body>
 
 </html>

@@ -7,7 +7,7 @@
   <link rel="icon" href="img/favicon.ico">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css">
   <link rel="stylesheet" href="theme.css" type="text/css">
-  <title>Portal de negociação</title>
+  <title>Site de negociação</title>
 </head>
 
 <body>
@@ -15,7 +15,7 @@
   <nav class="navbar navbar-expand sticky-top">
     <div class="container">
       <!-- Topbar Navbar -->
-      <a class="btn btn-link my-0 p-1" href="home.html"><i class="fa fa-arrow-left m-0"></i></a>
+      <a class="btn btn-link my-0 p-1" href="#" onclick="history.back()"><i class="fa fa-arrow-left m-0"></i></a>
       <p class="grey02 top-tt mt-2 mb-2">Site de Negociação</p>
       <ul class="navbar-nav ml-auto text-secondary"><a class="sidebar-brand d-flex align-items-right justify-content-right" href="#">
         </a>
@@ -67,6 +67,42 @@
       <div class="row">
         <div class="col-lg-12">
           <div class="card">
+            <div class="card-body">
+              <div class="resumo-line">
+                <p>Acordo Nº</p>
+                <p>7138812312321</p>
+              </div>
+              <div class="resumo-line">
+                <p>Data do Acordo</p>
+                <p>03/05/2024</p>
+              </div>
+              <div class="resumo-line">
+                <p>Situação Acordo</p>
+                <p class="status-pg">• Aguard. pagamento</p>
+              </div>
+              <div class="resumo-line">
+                <p>Valor de entrada</p>
+                <p><b>R$ 200,00</b></p>
+              </div>
+              <div class="resumo-line">
+                <p>Vencimento da entrada</p>
+                <p>15/05/2024</p>
+              </div>
+              <div class="resumo-line">
+                <p>Valor das parcelas</p>
+                <p><b>36x de R$ 54,70</b></p>
+              </div>
+              <div class="resumo-line">
+                <p class="col-7 px-0">Vencimento das parcelas</p>
+                <p class="text-right">25/02/2024<br>a 25/02/2027</p>
+              </div>
+              <p class="text-info mt-4 mb-1">Linha digitável:</p><a class="btn btn-link float-right mr-1" href="#"><i class="fa fa-clone text-body"></i> </a>
+              <p class="codebar">1238219379128379128519283712...</p>
+              <p class="text-info float-right mb-1" style="font-size:12px">Clique para copiar</p>
+            </div>
+            <a class="btn btn-primary btn-block mt-2" href="pagamento.html">EMITIR BOLETO</a><a class="btn btn-link btn-block text-danger" href="#" data-target="#cancel" data-toggle="modal">Cancelar acordo</a>
+          </div>
+          <div class="card my24">
             <div class="card-body">
               <div class="resumo-line">
                 <p>Acordo Nº</p>
@@ -138,8 +174,21 @@
         </div>
         <div class="modal-body">
           <p>Tem certeza que deseja cancelar seu acordo?</p>
-          <a class="btn btn-block btn-danger" href="#">CANCELAR ACORDO</a>
+          <a class="btn btn-block btn-danger" href="#" data-target="#cancel-ok" data-toggle="modal" data-dismiss="modal">CANCELAR ACORDO</a>
           <a class="btn btn-link btn-block" href="#" data-dismiss="modal">VOLTAR</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="cancel-ok">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h6 class="modal-title">Acordo cancelado</h6> <button type="button" class="close" data-dismiss="modal"> <span>×</span> </button>
+        </div>
+        <div class="modal-body">
+          <p>Seu acordo foi cancelado com sucesso!</p>
+          <a class="btn btn-block btn-primary" href="home.html">SAIR</a>
         </div>
       </div>
     </div>
@@ -177,7 +226,7 @@
       });
     });
   </script>
-   
+  
 </body>
 
 </html>
