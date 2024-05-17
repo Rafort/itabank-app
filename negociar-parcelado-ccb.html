@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="img/favicon.ico">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css">
+  <link rel="stylesheet" href="theme.css" type="text/css">
+  <title>Site de negociação</title>
+</head>
+
+<body>
+  <!-- menu -->
+  <nav class="navbar navbar-expand sticky-top">
+    <div class="container">
+      <!-- Topbar Navbar -->
+      <a class="btn btn-link my-0 p-1" href="#" onclick="history.back()"><i class="fa fa-arrow-left m-0"></i></a>
+      <p class="grey02 top-tt mt-2 mb-2">Negociar contratos</p>
+      <ul class="navbar-nav ml-auto text-secondary"><a class="sidebar-brand d-flex align-items-right justify-content-right" href="#">
+        </a>
+        <!-- Nav Item - User Information -->
+        <li class="nav-item dropdown no-arrow grey02">
+          <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <span class="mr-2">Cliente</span>
+            <i class="fa fa-chevron-down fa-fw grey01 d-inline-block"></i>
+          </a>
+          <!-- Dropdown - User Information -->
+          <div class="dropdown-menu dropdown-menu-right animated--grow-in" aria-labelledby="userDropdown">
+            <p class="dropdown-item mb-0">Cliente Completo </p>
+            <a class="dropdown-item fw-700 py-0" href="cadastro.html">CNPJ: 00.000.0001-00 </a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item py-0" href="#" data-toggle="modal" data-target="#logout"> Sair </a>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <!-- Sybnav-->
+  </nav>
+  <!-- Content -->
+  <nav class="navbar3 navbar-light navbar-expand">
+    <div class="container justify-content-center"> <button class="navbar-toggler navbar-toggler-right border-0" type="button" data-toggle="collapse" data-target="#navbar3">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse text-center justify-content-center" id="navbar3">
+        <ul class="navbar-nav justify-content-between">
+          <li class="nav-item border-bottom border-info mx-5 mb-2"> <a class="nav-link active" href="home.html">Ofertas</a> </li>
+          <li class="nav-item mx-5"> <a class="nav-link" href="acordos.html">Acordos</a> </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="pb-5">
+    <div class="container feed1 col-lg-12 py16">
+      <div class="row d-flex justify-content-center px16 my16">
+        <div class="px-0 col-lg-12">
+          <div class="stepper-wrapper">
+            <div class="stepper-item done">
+              <div class="step-counter ">
+                <i class="fa fa-check"></i>
+              </div>
+            </div>
+            <div class="stepper-item completed">
+              <div class="step-counter">2</div>
+            </div>
+            <div class="stepper-item active">
+              <div class="step-counter">3</div>
+            </div>
+            <div class="stepper-item">
+              <div class="step-counter">4</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12 col-lg-12">
+          <h6 class="mb-0" style="color:#3A4148; font-weight:600;">Selecione os contratos, parcelas e a data que deseja pagar sua negociação.</h6>
+        </div>
+      </div>
+    </div>
+    <div class="container feed1 col-lg-12">
+      <div class="row">
+        <div class="col-lg-12">
+          <!-- card start-->
+          <div class="card">
+            <div class="card-header6">
+              <div class="row">
+                <div class="col-12 px-0 py-0 my-0">
+                  <p class="mb-0">Contrato(s) em negociação</p>
+                </div>
+              </div>
+            </div>
+            <div class="card-body border-bottom">
+              <div class="row pb-2">
+                <div class="col-lg-1 col-1">
+                  <input type="checkbox" name="select1" id="select1" class="mt-2 mb-3 mr-2" checked="checked"></div>
+                <div class="px-2 col-lg-10 col-10">
+                  <p class="mb-0 pb-0 px-0">GIROPRE</p>
+                  <p class="mb-0 py-0 px-0 subtt">Contrato: 123891283</p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-1 col-lg-1">
+                  <input type="checkbox" name="select1" id="select1" class="mt-2 mb-3 mr-2" checked="checked"></div>
+                <div class="px-2 col-lg-10 col-10">
+                  <p class="mb-0 pb-0 px-0">GIROPRE</p>
+                  <p class="mb-0 pb-0 px-0 subtt">Contrato: 123891283</p>
+                </div>
+              </div>
+              <a class="btn btn-link text-muted mt-1 float-right" href="contratos.html">ver contratos<i class="fa fa-arrow-right fa-fw pull-right mt-1" style="font-weight:400;"></i></a>
+            </div>
+            <div class="card-header6">
+              <div class="row">
+                <div class="col-12 d-flex justify-content-between px-0 py-0 mt-3">
+                  <p class="mb-0">Por favor, informe quando você quer pagar</p>
+                </div>
+              </div>
+            </div>
+            <div class="card-body border-bottom my8 py-0 pb-2">
+              <a class="btn btn-link text-muted float-right my8 py-0 px-0" href="#">Atualizar valor</a>
+              <div class="form-group col-6 m-0 mx-0 p-0">
+                <div class="form-group">
+                  <select id="DiaSelect" class="form-control">
+                    <option value="1">20/05/2024</option>
+                    <option value="2">15/05/2024</option>
+                    <option value="3">20/05/2024</option>
+                    <option value="4">25/05/2024</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+            <div class="card-header6">
+              <div class="row">
+                <div class="col-12 d-flex justify-content-between px-0 py-0 mt-2">
+                  <p class="mb-0 pb-3">Opções de parcelamento</p>
+                </div>
+              </div>
+            </div>
+            <div class="card-body py-0">
+              <div class="form-check d-flex justify-content-between">
+                <input type="radio" class="form-check-input" id="radio1" name="optradio" value="option1" checked="">
+                <p class="col-9 opcs pl-0 pr-5">Entrada de R$4.000,00 + 12x de R$ 4.147,50 </p>
+                <p class="percents mb-1"><img src="img/arrow-down.svg" class="mx-1">40%</p> <label class="form-check-label" for="radio1"></label>
+              </div>
+              <div class="form-check d-flex justify-content-between">
+                <input type="radio" class="form-check-input" id="radio2" name="optradio" value="option2">
+                <p class="col-9 opcs pl-0 pr-5">Entrada de R$4.000,00 + 24x de R$ 2.223,75</p>
+                <p class="percents2 mb-1"><img src="img/arrow-down2.svg" class="mx-1">37%</p> <label class="form-check-label" for="radio2"></label>
+              </div>
+              <div class="form-check d-flex justify-content-between">
+                <input type="radio" class="form-check-input" id="radio3" name="optradio" value="option3">
+                <p class="col-9 opcs pl-0 pr-5">Entrada de R$4.000,00 + 36x de R$ 1.654,70</p>
+                <p class="percents2 mb-1"><img src="img/arrow-down2.svg" class="mx-1">32%</p> <label class="form-check-label" for="radio3"></label>
+              </div>
+              <a href="#" class="btn btn-link btn-block mb-3" style="color:#1D1F27;font-size:13px;text-decoration:underline;">Mais opções de parcelamento</a><a class="btn btn-primary btn-block" href="resumo-c-entrada-ccb.html">PAGAR PARCELADO</a><a class="btn btn-claro btn-block" href="#" data-target="#entrada" data-toggle="modal">MONTE SUA PROPOSTA</a>
+            </div>
+          </div>
+          <!-- card end-->
+        </div>
+      </div>
+      <div class="fab">
+        <button class="main">
+        </button>
+        <ul>
+          <li>
+            <button id="opcao1"><img src="img/whats1.svg" class="mb-2"> </button>
+          </li>
+          <li>
+            <button id="opcao2"><img src="img/chat1.svg" class="mb-2"></button>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="entrada">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h6 class="modal-title">Valor da parcela</h6> <button type="button" class="close" data-dismiss="modal"> <span>×</span> </button>
+        </div>
+        <div class="modal-body">
+          <form class="mb-0">
+            <div class="form-group my-0">
+              <div class="form-group"><label>Informe o valor que deseja pagar</label> <input type="text" class="form-control form-control-sm" placeholder="Digite aqui" id="form2" name="Valor"> </div>
+              <p style="font-size:10px;color:#7C818A;" class="mb-2">Mínimo R$ 520,00</p>
+              <div class="form-group mb-4"><label class="my8">Informe a data que deseja pagar</label>
+                <select id="DiaSelect" class="form-control">
+                  <option value="1">20/05/2024</option>
+                  <option value="2">15/05/2024</option>
+                  <option value="3">20/05/2024</option>
+                  <option value="4">25/05/2024</option>
+                </select></div>
+            </div>
+          </form>
+          <a class="btn btn-primary btn-block" href="#" data-dismiss="modal">CONTINUAR</a>
+          <a class="btn btn-link btn-block" href="#" data-dismiss="modal">CANCELAR</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <script>
+    function toggleFAB(fab) {
+      if (document.querySelector(fab).classList.contains('show')) {
+        document.querySelector(fab).classList.remove('show');
+      } else {
+        document.querySelector(fab).classList.add('show');
+      }
+    }
+    document.querySelector('.fab .main').addEventListener('click', function() {
+      toggleFAB('.fab');
+    });
+    document.querySelectorAll('.fab ul li button').forEach((item) => {
+      item.addEventListener('click', function() {
+        toggleFAB('.fab');
+      });
+    });
+  </script>
+   
+</body>
+
+</html>

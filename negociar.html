@@ -15,7 +15,7 @@
   <nav class="navbar navbar-expand sticky-top">
     <div class="container">
       <!-- Topbar Navbar -->
-       <a class="btn btn-link my-0 p-1" href="#" onclick="history.back()"><i class="fa fa-arrow-left m-0"></i></a>
+      <a class="btn btn-link my-0 p-1" href="#" onclick="history.back()"><i class="fa fa-arrow-left m-0"></i></a>
       <p class="grey02 top-tt mt-2 mb-2">Negociar contratos</p>
       <ul class="navbar-nav ml-auto text-secondary"><a class="sidebar-brand d-flex align-items-right justify-content-right" href="#">
         </a>
@@ -44,13 +44,13 @@
       </button>
       <div class="collapse navbar-collapse text-center justify-content-center" id="navbar3">
         <ul class="navbar-nav justify-content-between">
-           <li class="nav-item border-bottom border-info mx-5 mb-2"> <a class="nav-link active" href="home.html">Ofertas</a> </li>
+          <li class="nav-item border-bottom border-info mx-5 mb-2"> <a class="nav-link active" href="home.html">Ofertas</a> </li>
           <li class="nav-item mx-5"> <a class="nav-link" href="acordos.html">Acordos</a> </li>
         </ul>
       </div>
     </div>
   </nav>
-  <div class="pb-5"  >
+  <div class="pb-5 mar110">
     <div class="container feed1 col-lg-12 py16">
       <div class="row d-flex justify-content-center px16 my16">
         <div class="px-0 col-lg-12">
@@ -85,8 +85,7 @@
               </div>
             </div>
             <div class="card-body py-0">
-              <a class="btn btn-link text-muted float-right my16 py-0 px-0" href="#">Atualizar valor</a>
-              <div class="form-group col-6 m-0 mx-0 p-0">
+              <div class="form-group m-0 mx-0 p-0">
                 <div class="form-group">
                   <select id="DiaSelect" class="form-control my8">
                     <option value="1">20/05/2024</option>
@@ -102,11 +101,14 @@
         <div class="col-lg-12">
           <h6 class="mb-0 mt-3" style="color: rgb(58, 65, 72); font-weight: 600;">Informações dos contratos</h6>
           <div class="card my16">
-            <div class="card-header3">
+            <div class="card-header4">
               <div class="row">
-                <div class="col-12 my-0 px-0 mx-0 py-0">
-                  <p class="mb-0 pb-0">DESCONTO DE CHEQUE</p>
-                  <p class="mb-0 pb-0 subtt">Contrato: 123891283</p>
+                <div class="col-1 px-0 mx-0">
+                  <input type="checkbox" name="select1" id="select1" class="mt-2 mb-3 mx-0" checked="checked" disabled="disabled"></div>
+                <div class="px-0 col-11">
+                  <a class="btn btn-link text-muted float-right px-0 mt-1 mr-3" href="detalhes.html">ver detalhes&nbsp;</a>
+                  <p class="mb-0 pb-0 px-0">DESCONTO NO CHEQUE</p>
+                  <p class="mb-0 pb-0 px-0 subtt">Contrato: 123891283</p>
                 </div>
               </div>
             </div>
@@ -115,8 +117,6 @@
               <p class="mb-0 de-por">De&nbsp;<strike>R$1.000,00</strike> por</p>
               <h6 class="valores m-0">R$ 500,00</h6>
               <p class="pill-economy my16 mx-auto">Economize R$ 500,00</p>
-              <a class="btn btn-primary btn-block" href="resumo.html">PAGAR À VISTA</a>
-              <a class="btn btn-link text-muted mt-1 float-right" href="detalhes.html">ver detalhes do contrato<i class="fa fa-arrow-right fa-fw pull-right mt-1" style="font-weight:400;"></i></a>
             </div>
           </div>
         </div>
@@ -133,6 +133,13 @@
           <button id="opcao2"><img src="img/chat1.svg" class="mb-2"></button>
         </li>
       </ul>
+    </div>
+  </div>
+  <div class="checkout1 fixed-bottom">
+    <div class="container feed1">
+      <div class="card-body">
+        <a class="btn btn-primary btn-block" href="resumo.html">PAGAR À VISTA</a>
+      </div>
     </div>
   </div>
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

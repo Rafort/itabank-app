@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="img/favicon.ico">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css">
+  <link rel="stylesheet" href="theme.css" type="text/css">
+  <title>Site de negociação</title>
+</head>
+
+<body>
+  <!-- menu -->
+  <nav class="navbar navbar-expand sticky-top">
+    <div class="container">
+      <!-- Topbar Navbar -->
+      <a class="btn btn-link my-0 p-1" href="#" onclick="history.back()"><i class="fa fa-arrow-left m-0"></i></a>
+      <p class="grey02 top-tt mt-2 mb-2">Confirmar acordo</p>
+      <ul class="navbar-nav ml-auto text-secondary"><a class="sidebar-brand d-flex align-items-right justify-content-right" href="#">
+        </a>
+        <!-- Nav Item - User Information -->
+        <li class="nav-item dropdown no-arrow grey02">
+          <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <span class="mr-2">Cliente</span>
+            <i class="fa fa-chevron-down fa-fw grey01 d-inline-block"></i>
+          </a>
+          <!-- Dropdown - User Information -->
+          <div class="dropdown-menu dropdown-menu-right animated--grow-in" aria-labelledby="userDropdown">
+            <p class="dropdown-item mb-0">Cliente Completo </p>
+            <a class="dropdown-item fw-700 py-0" href="cadastro.html">CNPJ: 00.000.0001-00 </a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item py-0" href="#" data-toggle="modal" data-target="#logout"> Sair </a>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <!-- Sybnav-->
+  </nav>
+  <!-- Content -->
+  <nav class="navbar3 navbar-light navbar-expand">
+    <div class="container justify-content-center"> <button class="navbar-toggler navbar-toggler-right border-0" type="button" data-toggle="collapse" data-target="#navbar3">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse text-center justify-content-center" id="navbar3">
+        <ul class="navbar-nav justify-content-between">
+          <li class="nav-item border-bottom border-info mx-5 mb-2"> <a class="nav-link active" href="home.html">Ofertas</a> </li>
+          <li class="nav-item mx-5"> <a class="nav-link" href="acordos.html">Acordos</a> </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class="pb-5 mar110">
+    <div class="container feed1 col-lg-12 py16">
+      <div class="row d-flex justify-content-center px16 my16">
+        <div class="px-0 col-lg-12">
+          <div class="stepper-wrapper">
+            <div class="stepper-item done">
+              <div class="step-counter"><i class="fa fa-check"></i></div>
+            </div>
+            <div class="stepper-item done">
+              <div class="step-counter"><i class="fa fa-check"></i></div>
+            </div>
+            <div class="stepper-item completed">
+              <div class="step-counter">3</div>
+            </div>
+            <div class="stepper-item">
+              <div class="step-counter">4</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12 col-lg-12">
+          <h6 class="mb-0" style="color:#3A4148; font-weight:600;">Estamos quase lá! Informe seus contatos e confira todos os dados da negociação antes de confirmar o acordo</h6>
+        </div>
+      </div>
+    </div>
+    <div class="container feed1 col-lg-12">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="card">
+            <div class="card-body">
+              <h6 class="mt-0 mb-3 subtt2">Resumo da negociação</h6>
+              <div class="resumo-line">
+                <p>Plano de pagamento</p>
+                <p>Parcelado</p>
+              </div>
+              <div class="resumo-line">
+                <p>Valor de entrada</p>
+                <p><b>R$ 4.000,00</b></p>
+              </div>
+              <div class="resumo-line">
+                <p>Vencimento da entrada</p>
+                <p>15/05/2024</p>
+              </div>
+              <div class="resumo-line">
+                <p>Valor das Parcelas</p>
+                <p><b>36x de R$ 1.654,70</b></p>
+              </div>
+              <div class="resumo-line">
+                <p>Vencimento das Parcelas</p>
+                <p class="col-5 px-0 text-right">25/06/2024 a 25/05/2027</p>
+              </div>
+              <div class="resumo-line">
+                <p>Desconto</p>
+                <p>R$ 39.500,00</p>
+              </div>
+              <div class="resumo-line">
+                <p>Forma de pagamento</p>
+                <p>Boleto</p>
+              </div>
+              <hr>
+              <!-- Accordion-->
+              <div id="faqs" class="accordion">
+                <!-- Accordion item 1 -->
+                <div class="card5 my16">
+                  <div id="heading1" class="card-header5 my-2">
+                    <h3 class="my16">
+                      <a href="#" data-toggle="collapse" data-target="#collapse1" aria-expanded="false" aria-controls="collapse1" class="nav-link subtt2 collapsible-link p-0">Ver detalhes do acordo</a>
+                    </h3>
+                  </div>
+                  <div id="collapse1" aria-labelledby="heading1" class="collapse">
+                    <div class="p-0 my-2">
+                      <div class="resumo-line pb-1">
+                        <p class="col-8 m-0 p-0" style="line-height: 15px;">Valor total das dívidas negociadas</p>
+                        <p>R$ 100.000,00</p>
+                      </div>
+                      <div class="resumo-line pb-1">
+                        <p class="col-8 m-0 p-0" style="line-height: 15px;">Valor total IOF</p>
+                        <p>R$ 2.125,30</p>
+                      </div>
+                      <div class="resumo-line">
+                        <div class="col-8 m-0 p-0">
+                          <p class="m-0 p-0">Valor total financiado<br>
+                          </p>
+                          <p style="font-size:10px;margin-top:-3px;letter-spacing:-0.3px;" class="p-0">(valor total das dívidas renegociadas + IOF)</p>
+                        </div>
+                        <p>R$ 63.950,30</p>
+                      </div>
+                    </div>
+                  </div>
+                </div><!-- End -->
+                <!-- Accordion item 2 -->
+                <div class="card5">
+                  <div id="heading2" class="card-header5">
+                    <h3 class="card-header5 border-top py16">
+                      <a href="#" data-toggle="collapse" data-target="#collapse2" aria-expanded="false" aria-controls="collapse2" class="nav-link subtt2 collapsible-link p-0">Impostos e taxas</a>
+                    </h3>
+                  </div>
+                  <div id="collapse2" aria-labelledby="heading2" class="collapse">
+                    <div class="p-0 my-2">
+                      <div class="resumo-line pb-1">
+                        <p class="col-7 m-0 p-0" style="line-height: 15px;">Custo efetivo total (CET)</p>
+                        <p class="text-right">1,74% ao mês ou 23,50% ao ano</p>
+                      </div>
+                    </div>
+                  </div>
+                </div><!-- End -->
+                <!-- Accordion item 3 -->
+                <div class="card5">
+                  <div id="heading3" class="card-header5 border-top">
+                    <h3 class="subtt2 mt-2 py8">
+                      <a href="#" data-toggle="collapse" data-target="#collapse3" aria-expanded="false" aria-controls="collapse3" class="nav-link subtt2 collapsible-link p-0" style="line-height: 15px;">Contratos envolvidos nessa negociação</a>
+                    </h3>
+                  </div>
+                  <div id="collapse3" aria-labelledby="heading3" class="collapse">
+                    <div class="p-0 my-2">
+                      <div class="resumo-line pb-1 ">
+                        <p style="font-size:10px;">GIROPRE</p>
+                        <p style="font-size:10px;">327183927183</p>
+                      </div>
+                      <div class="resumo-line pb-1 ">
+                        <p style="font-size:10px;">GIROPRE</p>
+                        <p style="font-size:10px;">554773927183</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- End -->
+              </div>
+              <!-- Accordion End -->
+            </div>
+          </div>
+          <div class="card my16">
+            <div class="card-body">
+              <form class="mb-0">
+                <div class="form-group my-0">
+                  <div class="form-group"><label>Telefone</label> <input type="text" class="form-control form-control-sm" placeholder="Digite aqui" id="form2" name="Telefone"> </div>
+                  <div class="form-group"><label class="my8">Email</label> <input type="text" class="form-control form-control-sm" placeholder="Digite aqui" id="form2" name="email"> </div>
+                </div>
+              </form>
+            </div>
+          </div>
+          <div class="card my16">
+            <div class="card-body">
+              <form class="mb-0">
+                <div class="form-group my-0">
+                  <h6 class="mt-0 mb-3 subtt2">Importante</h6>
+                  <p class="important"> Agência: 2813 Conta Corrente: 12391-10 </p>
+                  <p class="important">Você autoriza o débito dos valores devidos de forma total ou parcela na(s) conta(s) corrente, poupança, salário e/ou pagamento indicada(s) na data de vencimento, podendo ser utilizado o limite da conta, evitando atrasos no pagamento. Em caso de alteração da numeração, categoria ou segmento da(s) conta(s) autorizada(s), os débitos autorizados serão mantidos, nas mesmas condições aprovadas. </p>
+                  <div class="row mb-2">
+                    <div class="col-12 d-flex flex-row justify-content-start align-items-center">
+                      <input type="checkbox" name="select1" id="select1" class="mr-3 mt-2 mb-2">
+                      <p class="mb-0 pb-0 important">Eu li e aceito os termos do acordo.</p>
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="fab">
+        <button class="main">
+        </button>
+        <ul>
+          <li>
+            <button id="opcao1"><img src="img/whats1.svg" class="mb-2"> </button>
+          </li>
+          <li>
+            <button id="opcao2"><img src="img/chat1.svg" class="mb-2"></button>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="checkout1 fixed-bottom">
+    <div class="container feed1">
+      <div class="card-body">
+        <a class="btn btn-primary btn-block" href="#" data-target="#confirmar" data-toggle="modal">CONFIRMAR ACORDO</a>
+        <a class="btn btn-link btn-block" href="#" data-target="#depois" data-toggle="modal">Negociar depois</a>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="confirmar">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h6 class="modal-title">Confirmar acordo</h6> <button type="button" class="close" data-toggle="modal"> <span>×</span> </button>
+        </div>
+        <div class="modal-body">
+          <p>Você deseja confirmar a oferta e criar o acordo?</p>
+          <a class="btn btn-primary btn-block" href="#" data-target="#aviso" data-toggle="modal" data-dismiss="modal">CONFIRMAR ACORDO</a>
+          <a class="btn btn-link btn-block" href="#" data-dismiss="modal">CANCELAR</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="aviso">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h6 class="modal-title">Atenção!</h6> <button type="button" class="close" data-dismiss="modal"> <span>×</span> </button>
+        </div>
+        <div class="modal-body">
+          <p>Esta negociação gerou um contrato (Cédula de Crédito Bancário), que precisa ser assinado e entregue na agência mais próxima. O acordo só será formalizado após a entrega do contrato. Confirmo que as minhas informações estão atualizadas. Estou ciente que devo levar o contrato disponibilizado ao final desta contratação, assinado à agência mais próxima para obter o boleto da primeira parcela do pagamento.</p>
+          <a class="btn btn-primary btn-block" href="concluir-ccb.html">continuar</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="depois">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h6 class="modal-title">Negociar depois</h6> <button type="button" class="close" data-dismiss="modal"> <span>×</span> </button>
+        </div>
+        <div class="modal-body">
+          <p>Você poderá negociar novamente a qualquer momento.</p>
+          <a class="btn btn-primary btn-block" href="#">NEGOCIAR DEPOIS</a>
+          <a class="btn btn-link btn-block" href="#" data-dismiss="modal">CANCELAR</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <script>
+    function toggleFAB(fab) {
+      if (document.querySelector(fab).classList.contains('show')) {
+        document.querySelector(fab).classList.remove('show');
+      } else {
+        document.querySelector(fab).classList.add('show');
+      }
+    }
+    document.querySelector('.fab .main').addEventListener('click', function() {
+      toggleFAB('.fab');
+    });
+    document.querySelectorAll('.fab ul li button').forEach((item) => {
+      item.addEventListener('click', function() {
+        toggleFAB('.fab');
+      });
+    });
+  </script>
+   
+</body>
+
+</html>

@@ -66,7 +66,83 @@
     <div class="container feed1 col-lg-12">
       <div class="row">
         <div class="col-lg-12">
+          <!-- Card acordo CCB antes de entregar o contrato na agência -->
           <div class="card">
+            <div class="card-body">
+              <div class="resumo-line">
+                <p>Acordo Nº</p>
+                <p>97138812312321</p>
+              </div>
+              <div class="resumo-line">
+                <p>Data do Acordo</p>
+                <p>03/05/2024</p>
+              </div>
+              <div class="resumo-line">
+                <p>Situação Acordo</p>
+                <p class="status-contr">• Aguard. formalização</p>
+              </div>
+              <div class="resumo-line">
+                <p>Valor de entrada</p>
+                <p><b>R$ 4.000,00</b></p>
+              </div>
+              <div class="resumo-line">
+                <p>Vencimento da entrada</p>
+                <p>15/05/2024</p>
+              </div>
+              <div class="resumo-line">
+                <p>Valor das parcelas</p>
+                <p><b>36x de R$ 1.654,70</b></p>
+              </div>
+              <div class="resumo-line">
+                <p class="col-7 px-0">Vencimento das parcelas</p>
+                <p class="text-right">25/02/2024<br>a 25/02/2027</p>
+              </div>
+              <h6 class="pt-4 mt-3 mb-1 border-top" style="color:#3A4148; font-weight:600;">Atenção! </h6>
+              <p class="mt-2 mb-1">O acordo só será formalizado após a entrega do contrato na agência mais próxima</p>
+            </div>
+            <a class="btn btn-outline-info btn-block btn-contrat my-1" href="#">BAIXAR CONTRATO</a>
+            <a class="btn btn-outline-info btn-block btn-contrat my-1" href="#">RECEBER POR WHATSAPP</a>
+            <a class="btn btn-outline-info btn-block btn-contrat my-1" href="#">RECEBER POR E-MAIL</a>
+            <a class="btn btn-link btn-block text-danger" href="#" data-target="#cancel" data-toggle="modal">Cancelar acordo</a>
+          </div>
+          <!-- Card acordo CCB após entrega do contrato na agência. Este card só vai aparecer após o anterior ser confirmado, substituindo-o. -->
+          <div class="card my24">
+            <div class="card-body">
+              <div class="resumo-line">
+                <p>Acordo Nº</p>
+                <p>97138812312321</p>
+              </div>
+              <div class="resumo-line">
+                <p>Data do Acordo</p>
+                <p>03/05/2024</p>
+              </div>
+              <div class="resumo-line">
+                <p>Situação Acordo</p>
+                <p class="status-pg">• Aguard. pagamento</p>
+              </div>
+              <div class="resumo-line">
+                <p>Valor de entrada</p>
+                <p><b>R$ 4.000,00</b></p>
+              </div>
+              <div class="resumo-line">
+                <p>Vencimento da entrada</p>
+                <p>15/05/2024</p>
+              </div>
+              <div class="resumo-line">
+                <p>Valor das parcelas</p>
+                <p><b>36x de R$ 1.654,70</b></p>
+              </div>
+              <div class="resumo-line">
+                <p class="col-7 px-0">Vencimento das parcelas</p>
+                <p class="text-right">25/02/2024<br>a 25/02/2027</p>
+              </div>
+              <p class="text-info mt-4 mb-1">Linha digitável:</p><a class="btn btn-link float-right mr-1" href="#"><i class="fa fa-clone text-body"></i> </a>
+              <p class="codebar">1238219379128379128519283712...</p>
+              <p class="text-info float-right mb-1" style="font-size:12px">Clique para copiar</p>
+            </div>
+            <a class="btn btn-primary btn-block mt-2" href="pagamento.html">EMITIR BOLETO</a><a class="btn btn-link btn-block text-danger" href="#" data-target="#cancel" data-toggle="modal">Cancelar acordo</a>
+          </div>
+          <div class="card my24">
             <div class="card-body">
               <div class="resumo-line">
                 <p>Acordo Nº</p>
@@ -226,7 +302,7 @@
       });
     });
   </script>
-  
+   
 </body>
 
 </html>

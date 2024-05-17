@@ -333,7 +333,7 @@ p{
 .btn {
   border-radius: 4px;
   padding: 8px;
-  font-size: 14px;
+  font-size: 13px;
 }
 .btn-lg {
 	border-radius: 0.50rem;
@@ -425,8 +425,13 @@ p{
   color: #3A4148;
   border-bottom: 1px solid #E1E1E4;
   padding-top: 0px;
-  padding-left:16px;
-  padding-bottom:16px;
+  padding-left:14px;
+  padding-bottom:14px;
+}
+
+.card-header4 .btn-link{
+  color: #3A4148;
+  font-size:11px;
 }
 
 .card-header5 {
@@ -445,6 +450,9 @@ p{
   	margin-left:150px;
   	width: 42%;
   	font-weight:400;
+}
+.col-full{
+ 	width:100%; 
 }
 
 .subtt{
@@ -1281,6 +1289,19 @@ h6{
 	border-radius: 32px; 
   color: white;
 }
+.percents3{
+ 	display: flex;
+  flex-direction: row;
+  justify-content: center;
+	align-items: center;
+	padding: 4px 6px;
+  height: 18px;
+  background: #81C100;
+	border-radius: 32px; 
+  color: white;
+  font-size:10px;
+  font-style: italic;
+}
 
 .status-pg{
  	content:'&#x2022;';
@@ -1293,6 +1314,18 @@ h6{
   background: #F3FAE0;
 	border-radius: 32px; 
   color: #8BC700;
+}
+.status-contr{
+ 	content:'&#x2022;';
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+	align-items: center;
+	padding: 2px 8px 2px 8px;
+  height: 24px;
+  background: #EFF0F2;
+	border-radius: 32px; 
+  color: #555A64;
 }
 
 .pill-economy{
@@ -1751,7 +1784,12 @@ label{
 .important{
  	font-size:13px;
   font-style: italic;
-  text-justify: justify;
+  text-align: justify;
+}
+.btn-contrat{
+  border-radius:21px;
+  color: var(--primary);
+  font-weight:500;
 }
 
 
